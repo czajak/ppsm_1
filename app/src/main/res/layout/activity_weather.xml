@@ -5,7 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/grey"
-    tools:context=".Weather">
+    tools:context=".weatherActivity">
+
+    <TextView
+        android:id="@+id/id_err_main"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="An error occured. Please check your internet connection."
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
         android:id="@+id/imageView"
